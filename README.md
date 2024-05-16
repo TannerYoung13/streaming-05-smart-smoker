@@ -1,25 +1,30 @@
-# Final Project: Article Summarizer
+## Tanner Young
+## 5/16/2024
 
-Complete the tasks in the Python Notebook in this repository.
-Make sure to add and push the pkl or text file of your scraped html (this is specified in the notebook)
+# streaming-05-smart-smoker
 
-## Rubric
+> Streaming data may come from web analytics, social media, smart devices, and more. In these next two modules, we'll look at implementing analytics for a "smart smoker" (as in slow cooked food). 
 
-* (Question 1) Article html stored in separate file that is committed and pushed: 1 pt
-* (Question 2) Polarity score printed with an appropriate label: 1 pt
-* (Question 2) Number of sentences printed: 1 pt
-* (Question 3) Correct (or equivalent in the case of multiple tokens with same frequency) tokens printed: 1 pt
-* (Question 4) Correct (or equivalent in the case of multiple lemmas with same frequency) lemmas printed: 1 pt
-* (Question 5) Histogram shown with appropriate labelling: 1 pt
-* (Question 6) Histogram shown with appropriate labelling: 1 pt
-* (Question 7) Cutoff score seems appropriate given histograms: 2 pts (1/score)
-* (Question 8) Summary contains a shortened version of the article (less than half the number of sentences): 1 pt
-* (Question 8) Summary sentences are in the same order as they appeared in the original article: 1 pt
-* (Question 9) Polarity score printed with an appropriate label: 1 pt
-* (Question 9) Number of sentences printed: 1 pt
-* (Question 10) Summary contains a shortened version of the article (less than half the number of sentences): 1 pt
-* (Question 10) Summary sentences are in the same order as they appeared in the original article: 1 pt
-* (Question 11) Polarity score printed with an appropriate label: 1 pt
-* (Question 11) Number of sentences printed: 1 pt
-* (Question 12) Thoughtful answer based on reported polarity scores: 1 pt
-* (Question 13) Thoughtful answer based on summaries: 1 pt
+We want to stream information from a smart smoker. Read one value every half minute. (sleep_secs = 30)
+
+smoker-temps.csv has 4 columns:
+
+[0] Time = Date-time stamp for the sensor reading
+[1] Channel1 = Smoker Temp --> send to message queue "01-smoker"
+[2] Channel2 = Food A Temp --> send to message queue "02-food-A"
+[3] Channel3 = Food B Temp --> send to message queue "03-food-B"
+Requirements
+
+RabbitMQ server running
+pika installed in your active environment
+RabbitMQ Admin
+
+See http://localhost:15672/Links to an external site.
+
+## Before You Begin
+
+1. Fork this starter repo into your GitHub.
+1. Clone your repo down to your machine.
+1. View / Command Palette - then Python: Select Interpreter
+1. Select your conda environment. 
+
