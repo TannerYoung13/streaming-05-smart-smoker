@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\ksu09\OneDrive\Documents\Data Analytics Masters Work\Web Mining\article-summarizer-1\.venv
+set VIRTUAL_ENV=C:\Users\ksu09\OneDrive\Documents\Data Analytics Masters Work\streaming-05-smart-smoker\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 
