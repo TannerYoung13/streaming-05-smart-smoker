@@ -27,4 +27,9 @@ See http://localhost:15672/Links to an external site.
 1. Clone your repo down to your machine.
 1. View / Command Palette - then Python: Select Interpreter
 1. Select your conda environment. 
+1. Make sure to import pike or copy the file from a previous module
 
+## Explanation:
+1. Function offer_rabbitmq_admin_site: Prompts the user to open the RabbitMQ Admin website.
+2. Function send_message: Sends a binary message to the specified RabbitMQ queue. The message is packed into a binary format using the struct module.
+3. Function main: Reads the CSV file. Skips the header row. For each row in the CSV, extracts the timestamp and temperature values. If a temperature value is present, it packs the timestamp and temperature into a binary message using struct.pack and sends it to the appropriate queue.
