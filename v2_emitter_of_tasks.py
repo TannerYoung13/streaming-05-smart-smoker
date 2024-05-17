@@ -1,3 +1,5 @@
+#This version has no delay
+
 import csv
 import pika
 import sys
