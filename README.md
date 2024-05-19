@@ -33,3 +33,7 @@ See http://localhost:15672/Links to an external site.
 1. Function offer_rabbitmq_admin_site: Prompts the user to open the RabbitMQ Admin website.
 2. Function send_message: Sends a binary message to the specified RabbitMQ queue. The message is packed into a binary format using the struct module.
 3. Function main: Reads the CSV file. Skips the header row. For each row in the CSV, extracts the timestamp and temperature values. If a temperature value is present, it packs the timestamp and temperature into a binary message using struct.pack and sends it to the appropriate queue.
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-3.png)
